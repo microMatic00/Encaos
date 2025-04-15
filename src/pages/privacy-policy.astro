@@ -2,93 +2,81 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import HeroSection from '../components/HeroSection.astro';
+import PageHero from '../components/PageHero.astro';
 ---
 
-<Layout title="Privacy Policy - Sassify">
+<Layout title="Política de Privacidad - Encaos">
   <Header />
   <main>
-    <HeroSection 
-      title="Privacy Policy" 
-      description="Last updated: June 1, 2023"
+    <PageHero 
+      title="Política de Privacidad" 
+      description="Cómo recopilamos, utilizamos y protegemos tu información personal."
     />
     
-    <section class="py-16">
-      <div class="container-custom">
-        <div class="max-w-3xl mx-auto prose dark:prose-invert prose-headings:font-display prose-headings:font-semibold prose-a:text-primary-600 dark:prose-a:text-primary-400 prose-img:rounded-lg">
-          <p class="lead">
-            At Sassify, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our service.
-          </p>
-          
-          <h2>Information We Collect</h2>
-          
-          <h3>Personal Data</h3>
-          <p>
-            We may collect personal identification information from you in a variety of ways, including, but not limited to, when you visit our site, register on the site, place an order, subscribe to the newsletter, respond to a survey, fill out a form, and in connection with other activities, services, features or resources we make available on our Site. You may be asked for, as appropriate:
-          </p>
-          <ul>
-            <li>Name</li>
-            <li>Email address</li>
-            <li>Mailing address</li>
-            <li>Phone number</li>
-            <li>Credit card information</li>
-            <li>Company information</li>
-          </ul>
-          
-          <h3>Usage Data</h3>
-          <p>
-            We may also collect information on how the Service is accessed and used. This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
-          </p>
-          
-          <h2>How We Use Your Information</h2>
-          <p>
-            We use the information we collect in various ways, including to:
-          </p>
-          <ul>
-            <li>Provide, operate, and maintain our website and services</li>
-            <li>Improve, personalize, and expand our website and services</li>
-            <li>Understand and analyze how you use our website and services</li>
-            <li>Develop new products, services, features, and functionality</li>
-            <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
-            <li>Send you emails</li>
-            <li>Find and prevent fraud</li>
-          </ul>
-          
-          <h2>Cookies</h2>
-          <p>
-            We use cookies and similar tracking technologies to track the activity on our Service and hold certain information. Cookies are files with small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device.
-          </p>
-          <p>
-            You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.
-          </p>
-          
-          <h2>Data Security</h2>
-          <p>
-            The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.
-          </p>
-          
-          <h2>Third-Party Services</h2>
-          <p>
-            We may employ third-party companies and individuals to facilitate our Service, to provide the Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used. These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.
-          </p>
-          
-          <h2>Children's Privacy</h2>
-          <p>
-            Our Service does not address anyone under the age of 18 ("Children"). We do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your Children has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.
-          </p>
-          
-          <h2>Changes to This Privacy Policy</h2>
-          <p>
-            We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top of this Privacy Policy. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
-          </p>
-          
-          <h2>Contact Us</h2>
-          <p>
-            If you have any questions about this Privacy Policy, please <a href="/contact">contact us</a>.
-          </p>
-        </div>
+    <div class="container-custom py-16">
+      <div class="prose prose-lg dark:prose-invert mx-auto">
+        <h2>1. Información que recopilamos</h2>
+        <p>
+          En Encaos, podemos recopilar la siguiente información personal:
+        </p>
+        <ul>
+          <li>Información de contacto (nombre, correo electrónico, teléfono)</li>
+          <li>Información de la empresa (nombre, cargo, sector)</li>
+          <li>Información técnica (dirección IP, cookies, datos de navegación)</li>
+        </ul>
+        
+        <h2>2. Cómo utilizamos su información</h2>
+        <p>
+          Utilizamos la información recopilada para:
+        </p>
+        <ul>
+          <li>Proporcionar y mejorar nuestros servicios</li>
+          <li>Comunicarnos con usted sobre nuestros servicios</li>
+          <li>Responder a sus consultas y solicitudes</li>
+          <li>Personalizar su experiencia en nuestro sitio</li>
+          <li>Cumplir con requisitos legales y normativos</li>
+        </ul>
+        
+        <h2>3. Compartir información</h2>
+        <p>
+          No vendemos ni alquilamos su información personal a terceros. Podemos compartir su información con proveedores de servicios que nos ayudan a operar nuestro negocio y entregar servicios, siempre bajo estrictas obligaciones de confidencialidad.
+        </p>
+        
+        <h2>4. Almacenamiento y seguridad</h2>
+        <p>
+          Implementamos medidas de seguridad técnicas y organizativas adecuadas para proteger su información personal contra acceso, uso o divulgación no autorizados, así como contra daño, pérdida o alteración accidental.
+        </p>
+        
+        <h2>5. Sus derechos</h2>
+        <p>
+          Según la legislación aplicable, puede tener derecho a:
+        </p>
+        <ul>
+          <li>Acceder a sus datos personales</li>
+          <li>Corregir datos inexactos</li>
+          <li>Solicitar la eliminación de sus datos</li>
+          <li>Oponerse o limitar el procesamiento de sus datos</li>
+          <li>Solicitar la portabilidad de sus datos</li>
+        </ul>
+        
+        <h2>6. Cookies y tecnologías similares</h2>
+        <p>
+          Utilizamos cookies y tecnologías similares para mejorar su experiencia en nuestro sitio, comprender cómo interactúa con nuestro contenido y ofrecerle funcionalidades personalizadas.
+        </p>
+        
+        <h2>7. Cambios a esta política</h2>
+        <p>
+          Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación en nuestro sitio web.
+        </p>
+        
+        <h2>8. Contacto</h2>
+        <p>
+          Si tiene preguntas o inquietudes sobre nuestra Política de Privacidad o el manejo de sus datos personales, por favor contáctenos a través de la información proporcionada en nuestra página de contacto.
+        </p>
+        
+        <p class="text-sm text-gray-500 mt-12">Última actualización: {new Date().toLocaleDateString()}</p>
       </div>
-    </section>
+    </div>
   </main>
   <Footer />
 </Layout> 

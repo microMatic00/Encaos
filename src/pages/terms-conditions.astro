@@ -2,75 +2,67 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import HeroSection from '../components/HeroSection.astro';
+import PageHero from '../components/PageHero.astro';
 ---
 
-<Layout title="Terms & Conditions - Sassify">
+<Layout title="Términos y Condiciones - Encaos">
   <Header />
   <main>
-    <HeroSection 
-      title="Terms & Conditions" 
-      highlightText="Terms"
-      description="Please read these terms and conditions carefully before using our service."
+    <PageHero 
+      title="Términos y Condiciones" 
+      description="Al utilizar nuestros servicios, aceptas estos términos y condiciones."
     />
     
-    <section class="py-12 bg-white dark:bg-gray-800">
-      <div class="container-custom">
-        <div class="prose prose-lg dark:prose-invert max-w-4xl mx-auto">
-          <h2>1. Introduction</h2>
-          <p>
-            Welcome to Sassify. These Terms & Conditions govern your use of our website and services. By accessing or using our services, you agree to be bound by these Terms.
-          </p>
-          
-          <h2>2. Definitions</h2>
-          <p>
-            "Service" refers to the Sassify platform and all related services.
-            "User" refers to any individual or entity that accesses or uses our Service.
-            "Content" refers to all information and materials available on our Service.
-          </p>
-          
-          <h2>3. Account Registration</h2>
-          <p>
-            To use certain features of our Service, you may be required to register for an account. You agree to provide accurate and complete information during the registration process and to update such information to keep it accurate and current.
-          </p>
-          
-          <h2>4. User Responsibilities</h2>
-          <p>
-            You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account.
-          </p>
-          
-          <h2>5. Intellectual Property</h2>
-          <p>
-            All content, features, and functionality of our Service are owned by Sassify and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.
-          </p>
-          
-          <h2>6. Privacy Policy</h2>
-          <p>
-            Your use of our Service is also governed by our Privacy Policy, which is incorporated by reference into these Terms & Conditions.
-          </p>
-          
-          <h2>7. Limitation of Liability</h2>
-          <p>
-            In no event shall Sassify be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses.
-          </p>
-          
-          <h2>8. Changes to Terms</h2>
-          <p>
-            We reserve the right to modify these Terms at any time. We will provide notice of any material changes by posting the new Terms on our website. Your continued use of the Service after such modifications will constitute your acknowledgment of the modified Terms.
-          </p>
-          
-          <h2>9. Governing Law</h2>
-          <p>
-            These Terms shall be governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of law provisions.
-          </p>
-          
-          <h2>10. Contact Us</h2>
-          <p>
-            If you have any questions about these Terms, please contact us at support@sassify.com.
-          </p>
-        </div>
+    <div class="container-custom py-16">
+      <div class="prose prose-lg dark:prose-invert mx-auto">
+        <h2>1. Aceptación de los términos</h2>
+        <p>
+          Al acceder y utilizar los servicios de Encaos ("nosotros", "nuestro", "la Compañía"), usted acepta estar legalmente vinculado por estos Términos y Condiciones. Si no está de acuerdo con alguno de los términos, no debe utilizar nuestros servicios.
+        </p>
+        
+        <h2>2. Cambios en los términos</h2>
+        <p>
+          Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación. El uso continuado de nuestros servicios después de cualquier cambio constituye su aceptación de los nuevos términos.
+        </p>
+        
+        <h2>3. Servicios</h2>
+        <p>
+          Encaos ofrece servicios de comunicación digital, incluyendo pero no limitado a gestión de redes sociales, producción y edición de contenidos, y consultoría estratégica.
+        </p>
+        
+        <h2>4. Cuentas de usuario</h2>
+        <p>
+          Para acceder a determinados servicios, puede ser necesario crear una cuenta. Usted es responsable de mantener la confidencialidad de su cuenta y contraseña y de restringir el acceso a su computadora. Acepta la responsabilidad de todas las actividades que ocurran bajo su cuenta.
+        </p>
+        
+        <h2>5. Propiedad intelectual</h2>
+        <p>
+          Todo el contenido incluido en nuestros servicios, como texto, gráficos, logotipos, imágenes, así como la compilación de todo ello, y el software utilizado, es propiedad de Encaos o sus proveedores y está protegido por las leyes de propiedad intelectual aplicables.
+        </p>
+        
+        <h2>6. Limitación de responsabilidad</h2>
+        <p>
+          En ningún caso Encaos, sus directores, empleados o agentes serán responsables por cualquier daño directo, indirecto, incidental, especial, punitivo o consecuente que resulte del uso o la imposibilidad de usar nuestros servicios.
+        </p>
+        
+        <h2>7. Indemnización</h2>
+        <p>
+          Usted acepta defender, indemnizar y mantener indemne a Encaos y a sus afiliados, directores, empleados y agentes de y contra cualquier reclamo, responsabilidad, daño, pérdida y gasto, que surja de su uso de nuestros servicios.
+        </p>
+        
+        <h2>8. Ley aplicable</h2>
+        <p>
+          Estos términos se regirán e interpretarán de acuerdo con las leyes del país donde Encaos tiene su sede principal, sin tener en cuenta sus disposiciones sobre conflictos de leyes.
+        </p>
+        
+        <h2>9. Contacto</h2>
+        <p>
+          Si tiene alguna pregunta sobre estos Términos y Condiciones, póngase en contacto con nosotros a través de la información proporcionada en nuestra página de contacto.
+        </p>
+        
+        <p class="text-sm text-gray-500 mt-12">Última actualización: {new Date().toLocaleDateString()}</p>
       </div>
-    </section>
+    </div>
   </main>
   <Footer />
 </Layout> 

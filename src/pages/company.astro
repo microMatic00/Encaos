@@ -2,147 +2,187 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import HeroSection from '../components/HeroSection.astro';
+import PageHero from '../components/PageHero.astro';
 ---
 
-<Layout title="About Our Company - Sassify">
+<Layout title="Sobre Nosotros - Encaos">
   <Header />
   <main>
-    <HeroSection 
-      title="About Sassify" 
-      highlightText="Sassify"
-      description="We're on a mission to empower businesses with innovative SaaS solutions."
+    <PageHero 
+      title="Sobre Nosotros" 
+      description="Descubre quiénes somos y cómo transformamos el caos en ideas brillantes para tu comunicación digital."
     />
     
-    <section class="py-16 bg-white dark:bg-gray-800">
-      <div class="container-custom">
-        <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
-          <div>
-            <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
-              Our Story
-            </span>
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">From Startup to Industry Leader</h2>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
-              Founded in 2015, Sassify began with a simple idea: to make powerful SaaS tools accessible to businesses of all sizes. What started as a small team of three passionate developers has grown into a global company serving thousands of customers worldwide.
-            </p>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
-              Our journey hasn't always been easy, but our commitment to innovation, quality, and customer success has remained unwavering. Today, we're proud to be recognized as a leader in the SaaS industry, helping businesses transform their operations and achieve remarkable results.
-            </p>
-            <p class="text-gray-600 dark:text-gray-300">
-              As we continue to grow, we remain dedicated to our core mission: empowering businesses with the tools they need to succeed in the digital age.
-            </p>
-          </div>
-          <div class="rounded-lg overflow-hidden shadow-xl">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Sassify Team" class="w-full h-auto" />
-          </div>
-        </div>
-        
-        <div class="mb-24">
-          <div class="text-center mb-12">
-            <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
-              Our Values
-            </span>
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">What We Stand For</h2>
-            <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Our values guide everything we do, from how we build our products to how we interact with our customers and each other.
-            </p>
-          </div>
-          
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="card p-6 border border-gray-200 dark:border-gray-700">
-              <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Trust & Transparency</h3>
-              <p class="text-gray-600 dark:text-gray-300">
-                We believe in building trust through transparency. We're open about our processes, pricing, and policies, and we always strive to do what's right for our customers.
-              </p>
-            </div>
-            
-            <div class="card p-6 border border-gray-200 dark:border-gray-700">
-              <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Innovation & Excellence</h3>
-              <p class="text-gray-600 dark:text-gray-300">
-                We're constantly pushing the boundaries of what's possible, seeking new ways to solve complex problems and deliver exceptional value to our customers.
-              </p>
-            </div>
-            
-            <div class="card p-6 border border-gray-200 dark:border-gray-700">
-              <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Customer Success</h3>
-              <p class="text-gray-600 dark:text-gray-300">
-                Our customers' success is our success. We're committed to providing the support, resources, and tools our customers need to achieve their goals.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="mb-24">
-          <div class="text-center mb-12">
-            <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
-              Leadership Team
-            </span>
-            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Meet Our Leaders</h2>
-            <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Our diverse team of leaders brings decades of experience and a shared passion for innovation.
-            </p>
-          </div>
-          
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="text-center">
-              <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="w-full h-full object-cover" />
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Michael Chen</h3>
-              <p class="text-primary-600 dark:text-primary-400 mb-2">CEO & Co-Founder</p>
-              <p class="text-gray-600 dark:text-gray-300 text-sm">
-                With over 15 years of experience in the tech industry, Michael leads our company with vision and passion.
-              </p>
-            </div>
-            
-            <div class="text-center">
-              <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="w-full h-full object-cover" />
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Sarah Johnson</h3>
-              <p class="text-primary-600 dark:text-primary-400 mb-2">CTO & Co-Founder</p>
-              <p class="text-gray-600 dark:text-gray-300 text-sm">
-                Sarah's technical expertise and innovative thinking drive our product development and technology strategy.
-              </p>
-            </div>
-            
-            <div class="text-center">
-              <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
-                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="David Rodriguez" class="w-full h-full object-cover" />
-              </div>
-              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">David Rodriguez</h3>
-              <p class="text-primary-600 dark:text-primary-400 mb-2">COO</p>
-              <p class="text-gray-600 dark:text-gray-300 text-sm">
-                David ensures our operations run smoothly and efficiently, enabling us to deliver exceptional value to our customers.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="text-center">
-          <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Join Our Team</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            We're always looking for talented individuals who share our passion for innovation and excellence. Check out our current openings and join us on our mission.
+    <div class="container-custom py-16">
+      <div class="max-w-4xl mx-auto">
+        <div class="prose prose-lg dark:prose-invert mx-auto">
+          <h2>Nuestra Historia</h2>
+          <p>
+            Encaos nació como respuesta a una necesidad clara en el mercado: transformar el caos de la comunicación digital en estrategias efectivas y contenidos de alto impacto. Lo que comenzó como un proyecto pequeño se ha convertido en una agencia especializada que ayuda a empresas y profesionales a destacar en el entorno digital.
           </p>
-          <a href="/career" class="btn-primary">View Open Positions</a>
+          
+          <h2>Nuestra Misión</h2>
+          <p>
+            En Encaos, nuestra misión es transformar el caos de información en ideas ordenadas y estrategias efectivas de comunicación que conecten a las marcas con sus audiencias de manera auténtica y significativa.
+          </p>
+          
+          <h2>Nuestros Valores</h2>
+          <ul>
+            <li><strong>Creatividad:</strong> Buscamos soluciones innovadoras y fuera de lo común.</li>
+            <li><strong>Orden:</strong> Transformamos la complejidad en claridad y estructura.</li>
+            <li><strong>Autenticidad:</strong> Creamos comunicaciones genuinas que reflejan la verdadera esencia de cada marca.</li>
+            <li><strong>Colaboración:</strong> Trabajamos estrechamente con nuestros clientes como verdaderos socios.</li>
+            <li><strong>Adaptabilidad:</strong> Evolucionamos constantemente en un entorno digital siempre cambiante.</li>
+          </ul>
+          
+          <h2>Nuestro Equipo</h2>
+          <p>
+            Somos un equipo multidisciplinario de especialistas en comunicación digital, diseñadores, redactores, estrategas de redes sociales y productores de contenido. Cada miembro aporta una perspectiva única y habilidades especializadas que nos permiten ofrecer soluciones integrales a nuestros clientes.
+          </p>
+          
+          <!-- Sección de tarjetas de equipo -->
+          <div class="mt-10 -mx-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Miembro del equipo 1 -->
+              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
+                <div class="aspect-square overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                    alt="Ana García" 
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 dark:text-white">Ana García</h3>
+                  <p class="text-primary font-medium mb-3">Directora Creativa</p>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm">
+                    Especialista en estrategias de comunicación visual con más de 10 años de experiencia en el sector.
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Miembro del equipo 2 -->
+              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
+                <div class="aspect-square overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                    alt="Carlos Martínez" 
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 dark:text-white">Carlos Martínez</h3>
+                  <p class="text-primary font-medium mb-3">Director de Contenidos</p>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm">
+                    Redactor y estratega de contenidos especializado en storytelling y comunicación de marca.
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Miembro del equipo 3 -->
+              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
+                <div class="aspect-square overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                    alt="Laura Fernández" 
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 dark:text-white">Laura Fernández</h3>
+                  <p class="text-primary font-medium mb-3">Estratega Digital</p>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm">
+                    Experta en redes sociales y marketing digital con enfoque en análisis de datos y optimización.
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Miembro del equipo 4 -->
+              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
+                <div class="aspect-square overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                    alt="Miguel Rodríguez" 
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 dark:text-white">Miguel Rodríguez</h3>
+                  <p class="text-primary font-medium mb-3">Diseñador UX/UI</p>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm">
+                    Diseñador de experiencias digitales centradas en el usuario y soluciones visuales efectivas.
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Miembro del equipo 5 -->
+              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
+                <div class="aspect-square overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                    alt="Elena Torres" 
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 dark:text-white">Elena Torres</h3>
+                  <p class="text-primary font-medium mb-3">Gestora de Proyectos</p>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm">
+                    Coordinadora de equipos y proyectos con metodologías ágiles para garantizar resultados óptimos.
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Miembro del equipo 6 -->
+              <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
+                <div class="aspect-square overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                    alt="Javier López" 
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 dark:text-white">Javier López</h3>
+                  <p class="text-primary font-medium mb-3">Desarrollador Web</p>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm">
+                    Experto en desarrollo y optimización de sitios web y soluciones digitales a medida.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <h2>Nuestra Metodología</h2>
+          <p>
+            Nuestra metodología de trabajo se basa en un proceso de cuatro fases:
+          </p>
+          <ol>
+            <li><strong>Escuchar:</strong> Entendemos profundamente tu negocio, objetivos y audiencia.</li>
+            <li><strong>Ordenar:</strong> Organizamos la información y desarrollamos estrategias claras.</li>
+            <li><strong>Crear:</strong> Producimos contenidos de alta calidad que transmiten tu mensaje.</li>
+            <li><strong>Evolucionar:</strong> Analizamos resultados y optimizamos constantemente para mejorar.</li>
+          </ol>
+          
+          <h2>¿Por qué elegirnos?</h2>
+          <p>
+            Lo que nos diferencia es nuestra capacidad para ver orden donde otros ven caos. No solo creamos contenido atractivo, sino que lo hacemos con un propósito estratégico, asegurando que cada pieza de comunicación contribuya a tus objetivos de negocio.
+          </p>
+          <p>
+            Nos apasiona lo que hacemos y nos comprometemos con el éxito de cada proyecto, tratando los objetivos de nuestros clientes como propios.
+          </p>
+          
+          <div class="mt-12 text-center">
+            <a href="/contact" class="btn-primary inline-flex items-center">
+              Trabaja con nosotros
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   </main>
   <Footer />
 </Layout> 

@@ -1,0 +1,29 @@
+---
+// PageHero.astro - Un componente simple para encabezados de página
+export interface Props {
+  title: string;
+  description?: string;
+  highlightText?: string;
+}
+
+const { title, description, highlightText } = Astro.props;
+---
+
+<section class="bg-gray-50 dark:bg-gray-800/50 pt-32 pb-20">
+  <div class="container-custom text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
+      {highlightText ? (
+        <>
+          <span class="text-primary-600 dark:text-primary-400">{highlightText}</span> {title}
+        </>
+      ) : (
+        title
+      )}
+    </h1>
+    {description && (
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+        {description}
+      </p>
+    )}
+  </div>
+</section> 
