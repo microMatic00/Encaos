@@ -18,17 +18,7 @@ export default defineConfig({
     alpinejs()
   ],
   output: 'server',
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-    imageService: true,
-    imagesConfig: {
-      sizes: [640, 750, 828, 1080, 1200, 1920],
-      domains: [],
-      remotePatterns: [],
-    },
-  }),
+  adapter: vercel(),
   vite: {
     define: {
       // @ts-ignore
