@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import alpinejs from '@astrojs/alpinejs';
+import vercel from '@astrojs/vercel';
 
 // Cargar variables de entorno solo en desarrollo
 const isDev = process.env.NODE_ENV !== 'production';
@@ -16,6 +17,18 @@ export default defineConfig({
     tailwind(),
     alpinejs()
   ],
+  output: 'server',
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+    imageService: true,
+    imagesConfig: {
+      sizes: [640, 750, 828, 1080, 1200, 1920],
+      domains: [],
+      remotePatterns: [],
+    },
+  }),
   vite: {
     define: {
       // @ts-ignore
